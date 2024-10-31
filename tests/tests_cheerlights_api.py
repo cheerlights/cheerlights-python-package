@@ -1,7 +1,7 @@
-# tests/test_cheerlights.py
+# tests/test_cheerlights_api.py
 
 import unittest
-from cheerlights import (
+from cheerlights_api import (
     get_current_color,
     get_current_hex,
     get_current_color_name,

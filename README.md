@@ -7,13 +7,13 @@ A Python package to interact with the CheerLights API. It allows users to get th
 You can install the package using pip:
 
 ```bash
-pip install cheerlights
+pip install cheerlights-api
 ```
 
 ## Usage Examples
 
 ```python
-import cheerlights
+import cheerlights-api
 
 # Get the current color name and hex code
 current_color = cheerlights.get_current_color()

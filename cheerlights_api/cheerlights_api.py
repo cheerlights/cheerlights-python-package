@@ -1,4 +1,4 @@
-# cheerlights/cheerlights.py
+# cheerlights/cheerlights_api.py
 
 import requests
 
