@@ -3,7 +3,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='cheerlights-api',
+    name='cheerlights_api',
     version='0.1.0',
     description='A Python package to interact with the CheerLights API.',
     long_description=open('README.md').read(),
