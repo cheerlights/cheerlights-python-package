@@ -1,4 +1,4 @@
-# CheerLights Python Package
+# CheerLights API Python Package
 
 A Python package to interact with the CheerLights API. It allows users to get the current CheerLights color, retrieve the color history, and perform various color-related utilities.
 

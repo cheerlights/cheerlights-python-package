@@ -1,4 +1,4 @@
-# cheerlights/cheerlights_api.py
+# cheerlights_api/cheerlights_api.py
 
 import requests
 
@@ -11,7 +11,8 @@ def get_current_color():
     Returns:
         dict: A dictionary with 'color' and 'hex' keys.
     """
-    response = requests.get(CHEERLIGHTS_FEED_URL)
+    url = f"{CHEERLIGHTS_FEED_URL}?results=1"
+    response = requests.get(url)
     response.raise_for_status()
     data = response.json()
     color_name = data['feeds'][0]['field1']
@@ -45,7 +46,7 @@ def get_color_history(count=10):
     Get the history of CheerLights colors.
 
     Args:
-        count (int): The number of recent colors to retrieve.
+        count (int): The number of recent colors to retrieve (max 8000).
 
     Returns:
         list: A list of dictionaries with 'color', 'hex', and 'timestamp'.

@@ -1,4 +1,4 @@
-# cheerlights/__init__.py
+# cheerlights_api/__init__.py
 
 from .cheerlights_api import (
     get_current_color,
