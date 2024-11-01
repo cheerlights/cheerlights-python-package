@@ -1,3 +1,7 @@
+[![Upload Python Package](https://github.com/cheerlights/cheerlights-python-package/actions/workflows/python-publish.yml/badge.svg)](https://github.com/cheerlights/cheerlights-python-package/actions/workflows/python-publish.yml)
+
+![PyPI - Version](https://img.shields.io/pypi/v/cheerlights_api?link=https%3A%2F%2Fpypi.org%2Fproject%2Fcheerlights-api%2F)
+
 # CheerLights API Python Package
 
 A Python package to interact with the CheerLights API. It allows users to get the current CheerLights color, retrieve the color history, and perform various color-related utilities.
