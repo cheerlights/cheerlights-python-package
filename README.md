@@ -1,6 +1,6 @@
 [![Upload Python Package](https://github.com/cheerlights/cheerlights-python-package/actions/workflows/python-publish.yml/badge.svg)](https://github.com/cheerlights/cheerlights-python-package/actions/workflows/python-publish.yml)
 
-![PyPI - Version](https://img.shields.io/pypi/v/cheerlights_api?link=https%3A%2F%2Fpypi.org%2Fproject%2Fcheerlights-api%2F)
+[![PyPI - Version](https://img.shields.io/pypi/v/cheerlights_api)](https://pypi.org/project/cheerlights-api/)
 
 # CheerLights API Python Package
 
