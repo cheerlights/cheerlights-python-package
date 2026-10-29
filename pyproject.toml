@@ -1,3 +1,60 @@
 [build-system]
-requires = ["setuptools>=42", "wheel"]
-build-backend = "setuptools.build_meta"
+requires = ["hatchling>=1.27"]
+build-backend = "hatchling.build"
+
+[project]
+name = "cheerlights-api"
+version = "0.2.0"
+description = "Read the live CheerLights color, its history, and the CheerLights palette"
+authors = [{ name = "CheerLights Community", email = "info@cheerlights.com" }]
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+requires-python = ">=3.10"
+keywords = ["cheerlights", "iot", "thingspeak", "led", "color"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Education",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Topic :: Home Automation",
+    "Typing :: Typed",
+]
+dependencies = ["requests>=2.32"]
+
+[project.urls]
+Homepage = "https://cheerlights.com"
+Repository = "https://github.com/cheerlights/cheerlights-python-package"
+Issues = "https://github.com/cheerlights/cheerlights-python-package/issues"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.0",
+    "ruff>=0.17",
+    "mypy>=2.0",
+    "types-requests",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/cheerlights_api"]
+
+[tool.ruff]
+target-version = "py310"
+line-length = 110
+
+[tool.ruff.lint]
+select = ["E", "W", "F", "I", "B", "C4", "UP"]
+
+[tool.mypy]
+python_version = "3.10"
+strict = true
+
+[tool.pytest.ini_options]
+addopts = "-ra -q -m 'not live'"
+testpaths = ["tests"]
+markers = ["live: calls the real CheerLights feed (run with -m live)"]
